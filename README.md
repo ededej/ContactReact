@@ -19,6 +19,7 @@ Below you'll find information about performing common tasks. The most recent ver
 
 * [Running On Local Machine](#running-on-your-local-machine)
 * [Folder Structure](#folder-structure)
+* [Production Build Deploy](#production-build-deploy)
 * [Available Scripts](#available-scripts)
   * [npm start](#npm-start)
   * [npm test](#npm-test)
@@ -54,7 +55,14 @@ screens/ contains all the different screen that we can navigate. App.js has stac
 * /screens/ViewContactScreen it will show full details of contacts, edit or delete the contact from the list.
 * /screens/ContactAddScreen it will add the contact to the list.
 
+## Production Build Deploy
 
+### Android
+To generate apk for android we need to follow this guide on react:[Generating Signed APK](https://facebook.github.io/react-native/docs/signed-apk-android.html#content). Dowload the genereated apk on your phone. That is your producation version of the app.
+
+### iOS
+To build production ready to be install by other device we need to follow this guide: [Building Your App For Production](
+https://facebook.github.io/react-native/docs/running-on-device#building-your-app-for-production)
 ## Available Scripts
 
 If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well. Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
@@ -87,9 +95,7 @@ yarn start -- --reset-cache
 Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
 
 
-## Environment Variables
 
-You can configure some of Create React Native App's behavior using environment variables.
 
 ## Authors
 
