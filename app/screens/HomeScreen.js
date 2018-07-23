@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { FlatList, Button, Alert, StyleSheet, Text, View, ScrollView } from 'react-native';
-import { createStackNavigator, } from 'react-navigation';
+import { FlatList, Button, StyleSheet, Text, View, ScrollView } from 'react-native';
 import SimpleAsyncStorage from '../persitence/SimpleAsyncStorage'
-import { List,ListItem, SearchBar } from 'react-native-elements';
+import { List, ListItem } from 'react-native-elements';
 
 
 class HomeScreen extends React.Component {
@@ -14,49 +13,58 @@ class HomeScreen extends React.Component {
   }
   constructor(props) {
     super(props)
-    this.state = { 
+    this.state = {
+      isMounted: false,
       data: [],
       loading: false,
       error: null,
 
-     }
-   
+    }
+
   }
   componentDidMount() {
+    this.setState({ isMounted: true })
     this.getContactList();
-    this.props.navigation.addListener('willFocus', (playload)=>{
+    this.props.navigation.addListener('willFocus', (playload) => {
       this.getContactList();
     });
   }
-  
+  componentWillUnmount() {
+    this.setState({ isMounted: false })
+    this.props.navigation.removeEventListener('willFocus', (playload) => {
+      this.getContactList();
+    });
+  }
   getContactList = () => {
-    // const { page, seed } = this.state;
     this.setState({ loading: true });
     SimpleAsyncStorage.retrieveAllData()
-    .then((response) => {
-      let tempArray = [];
+      .then((response) => {
 
-      if (response != null) {
-        console.log('returned response:', response);
-        response.map(contact => 
-          tempArray.push({
-            key:contact[0],
-            value: JSON.parse(contact[1])
-        }));
-        this.setState({
-          data: tempArray,
-          loading:false,
-          error: response.error || null
-        });
-        
-      } else {
-        console.log('error');
+        let tempArray = [];
+
+        if (response != null) {
+          console.log('returned response:', response);
+          response.map(contact =>
+            tempArray.push({
+              key: contact[0],
+              value: JSON.parse(contact[1])
+            }));
+          if (this.state.isMounted) {
+
+            this.setState({
+              data: tempArray,
+              loading: false,
+              error: response.error || null
+            });
+          }
+
+        } else {
+          this.setState({ error, loading: false });
+        }
+      })
+      .catch(error => {
         this.setState({ error, loading: false });
-      }
-    })
-    .catch(error => {
-      this.setState({ error, loading: false });
-    });
+      });
   };
   renderSeparator = () => {
     return (
@@ -69,18 +77,18 @@ class HomeScreen extends React.Component {
     );
   };
 
-  viewContact=(contact)=>  {
+  viewContact = (contact) => {
     console.log('Contact select', contact);
-    this.props.navigation.navigate('ViewContact',{contact});
+    this.props.navigation.navigate('ViewContact', { contact });
 
   }
 
-  _renderItem =({ item }) => (
+  _renderItem = ({ item }) => (
     <ListItem
-    title={`${item.value.firstName} ${item.value.lastName}`}
-    subtitle={item.value.email}
-    containerStyle={{ borderBottomWidth: 0 }}
-    onPress={() => this.viewContact(item.value)}
+      title={`${item.value.firstName} ${item.value.lastName}`}
+      subtitle={item.value.email}
+      containerStyle={{ borderBottomWidth: 0 }}
+      onPress={() => this.viewContact(item.value)}
     />
   );
 
@@ -92,7 +100,7 @@ class HomeScreen extends React.Component {
           flex: 1,
           backgroundColor: 'skyblue',
           flexDirection: 'row',
-          justifyContent:  'space-between',
+          justifyContent: 'space-between',
         }} >
           <Text style={styles.welcome}>Your Contacts</Text>
 
@@ -106,20 +114,20 @@ class HomeScreen extends React.Component {
         </View>
 
         <View style={{ flex: 11, backgroundColor: 'powderblue' }} >
-        <ScrollView >
+          <ScrollView >
 
-          <List
-          containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-            <FlatList
-              data={this.state.data}
-              ItemSeparatorComponent={this.renderSeparator}
-              renderItem={this._renderItem}
+            <List
+              containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <FlatList
+                data={this.state.data}
+                ItemSeparatorComponent={this.renderSeparator}
+                renderItem={this._renderItem}
               />
-              </List>
-              </ScrollView >
+            </List>
+          </ScrollView >
 
         </View>
-        
+
       </View>
     );
   }

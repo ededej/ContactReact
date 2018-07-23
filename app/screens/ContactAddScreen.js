@@ -15,9 +15,6 @@ class ContactAddScreen extends Component {
 
       }
 
-      validateName(){
-
-      }
       createApplicant = (contact) => {
         console.log("Parent update", contact);
         SimpleAsyncStorage.storeData(contact.email,contact);
@@ -25,6 +22,7 @@ class ContactAddScreen extends Component {
         console.log("Parent state value", this.state);
         this.props.navigation.navigate('Home')
       };
+      
     render() {
        
         return (
