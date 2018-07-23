@@ -11,7 +11,7 @@ The app is not hosted on app store or google store. So, to run it locally you wi
 2. Choose Building Projects with Native Code ( I choose this option just in case I need to write some iOS or android native)
 3. Follow those instruction based on your local machine.
 
-### After finishing with Prerequisites
+#### After finishing with Prerequisites
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
@@ -27,10 +27,11 @@ Below you'll find information about performing common tasks. The most recent ver
 
 
 ## Running on your local machine
-Create a folder on your local machine. 
-Then clone/download this repository https://github.com/ededej/ContactReact.git
-Go to directory: cd ContactReact/
-Install the dependencies need for the app: npm install 
+* Create a folder on your local machine. 
+* Then clone/download this repository `https://github.com/ededej/ContactReact.git`
+* Go to directory: `cd ContactReact/`
+* Install the dependencies need for the app: `npm install `
+
 The react app is ready now. Please follow the Available Scripts to run the application in different devices. If you have issues with any of the scripts please got React Native page for more help about your environment.
 
 ## Folder Structure
