@@ -1,0 +1,672 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+        }
+      }
+    >
+      Add Contact Information
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "powderblue",
+        "flex": 10,
+      }
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#86939e",
+                    "fontSize": 15,
+                    "fontWeight": "bold",
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 15,
+                  },
+                  Object {
+                    "fontSize": 20,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            First Name
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#bdc6cf",
+              "borderBottomWidth": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            onChangeText={[Function]}
+            placeholder="Please enter your First Name"
+            returnKeyType="next"
+            style={
+              Array [
+                Object {
+                  "color": "#86939e",
+                  "minHeight": 36,
+                  "width": 750,
+                },
+                Object {
+                  "fontSize": 17.5,
+                },
+                undefined,
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#ff190c",
+                    "fontSize": 15,
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 5,
+                  },
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Please insert a valid name
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#86939e",
+                    "fontSize": 15,
+                    "fontWeight": "bold",
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 15,
+                  },
+                  Object {
+                    "fontSize": 20,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Last Name
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#bdc6cf",
+              "borderBottomWidth": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            onChangeText={[Function]}
+            placeholder="Please enter your Last Name"
+            returnKeyType="next"
+            style={
+              Array [
+                Object {
+                  "color": "#86939e",
+                  "minHeight": 36,
+                  "width": 750,
+                },
+                Object {
+                  "fontSize": 17.5,
+                },
+                undefined,
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#ff190c",
+                    "fontSize": 15,
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 5,
+                  },
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Please insert a valid name
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#86939e",
+                    "fontSize": 15,
+                    "fontWeight": "bold",
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 15,
+                  },
+                  Object {
+                    "fontSize": 20,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Email
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#bdc6cf",
+              "borderBottomWidth": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="email-address"
+            onChangeText={[Function]}
+            placeholder="Please enter your email"
+            returnKeyType="next"
+            style={
+              Array [
+                Object {
+                  "color": "#86939e",
+                  "minHeight": 36,
+                  "width": 750,
+                },
+                Object {
+                  "fontSize": 17.5,
+                },
+                undefined,
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#ff190c",
+                    "fontSize": 15,
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 5,
+                  },
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Please insert a valid email example@exp.com
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#86939e",
+                    "fontSize": 15,
+                    "fontWeight": "bold",
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 15,
+                  },
+                  Object {
+                    "fontSize": 20,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Phone Number
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#bdc6cf",
+              "borderBottomWidth": 1,
+              "marginLeft": 20,
+              "marginRight": 20,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="phone-pad"
+            onChangeText={[Function]}
+            placeholder="Please enter your phone number"
+            returnKeyType="next"
+            style={
+              Array [
+                Object {
+                  "color": "#86939e",
+                  "minHeight": 36,
+                  "width": 750,
+                },
+                Object {
+                  "fontSize": 17.5,
+                },
+                undefined,
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#ff190c",
+                    "fontSize": 15,
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 5,
+                  },
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Please insert a valid phone number
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {},
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "#86939e",
+                    "fontSize": 15,
+                    "fontWeight": "bold",
+                    "marginBottom": 1,
+                    "marginLeft": 20,
+                    "marginRight": 20,
+                    "marginTop": 15,
+                  },
+                  Object {
+                    "fontSize": 20,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Status(Active/Inactive)
+            <RCTSwitch
+              disabled={false}
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              onValueChange={[Function]}
+              style={
+                Object {
+                  "height": 31,
+                  "width": 51,
+                }
+              }
+              value={false}
+            />
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "marginLeft": 15,
+                "marginRight": 15,
+              },
+              undefined,
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "padding": 30,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#9E9E9E",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "padding": 19,
+                  },
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  Object {
+                    "backgroundColor": "#008CBA",
+                  },
+                  undefined,
+                  Object {
+                    "padding": 12,
+                  },
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                  Object {
+                    "backgroundColor": "#dadee0",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {},
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontSize": 20,
+                      },
+                      undefined,
+                      Object {
+                        "fontSize": 17.5,
+                      },
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                    ],
+                  ]
+                }
+              >
+                SAVE
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
