@@ -11,13 +11,13 @@ The app is not hosted on app store or google store. So, to run it locally you wi
 2. Choose Building Projects with Native Code ( I choose this option just in case I need to write some ios or andriod native)
 3. Follow those instruction based on your local machine.
 
-### After finishing with ### Prerequisites
+### After finishing with Prerequisites
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Table of Contents
 
-* [Running On Local Machine](#running-on-your-local machine)
+* [Running On Local Machine](#running-on-your-local-machine)
 * [Folder Structure](#folder-structure)
 * [Available Scripts](#available-scripts)
   * [npm start](#npm-start)
@@ -37,17 +37,22 @@ The react app is ready now. Please follow the Avaible Scripts to run the applica
 ## Folder Structure
 Folder Structure
 Android/ios has all the native code. No code changes have been made, if neccessary it will be used for device type specific requirments.
+
 app/ folder is where all the code for the app is located.
+
 components/ has code that will be used across different screens or services.
-components/ContactForms contains forms to be used by ContactAddScreen and ViewContactScreen
-domain.model/ it is here for typescript interefaces that will bind to object to make more type safety. to be used by components, service or screens. domain.model/contact to be used across the app
+* components/ContactForms contains forms to be used by ContactAddScreen and ViewContactScreen
+
+domain.model/ it is here for typescript interefaces that will bind to object to make more type safety. to be used by components, service or screens. Having objects type desing into react.
+* /domain.model/contact to be used across the app
+
 persistence/ is service package that will contain components that will deal with persitence locally, database or cloud.
-persistence/SimpleAsyncStorage I have used SimpleAsyncStorage as perstince for contacts information. It is cross plattforms saving service and keeps data secure to be used by only this app.
+* persistence/SimpleAsyncStorage I have used SimpleAsyncStorage as perstince for contacts information. It is cross plattforms saving service and keeps data secure to be used by only this app.
 
 screens/ contains all the differents screen that we can navigate. App.js has stackNavigtor where the screens are defined to be used.
-screens/HomeScreen/ is the home screen for the app that will display the list.
-/screens/ViewContactScreen it will show full details of contacts, edit or delete the contact from the list.
-/screens/ContactAddScreen it will add the contact to the list.
+* /screens/HomeScreen/ is the home screen for the app that will display the list.
+* /screens/ViewContactScreen it will show full details of contacts, edit or delete the contact from the list.
+* /screens/ContactAddScreen it will add the contact to the list.
 
 
 ## Available Scripts
@@ -88,7 +93,7 @@ You can configure some of Create React Native App's behavior using environment v
 
 ## Authors
 
-* **Ermal Dedej** - *
+**Ermal Dedej** 
 
 ## License
 
