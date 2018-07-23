@@ -43,7 +43,6 @@ class HomeScreen extends React.Component {
         let tempArray = [];
 
         if (response != null) {
-          console.log('returned response:', response);
           response.map(contact =>
             tempArray.push({
               key: contact[0],
@@ -78,7 +77,6 @@ class HomeScreen extends React.Component {
   };
 
   viewContact = (contact) => {
-    console.log('Contact select', contact);
     this.props.navigation.navigate('ViewContact', { contact });
 
   }

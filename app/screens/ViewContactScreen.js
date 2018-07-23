@@ -13,14 +13,12 @@ class ViewContactScreen extends React.Component {
   }
 
   editApplicant= (contact) =>{
-    console.log("Parent edit", contact);
     SimpleAsyncStorage.updateData(contact.email, contact);
     this.props.navigation.navigate('Home')
 
   }
 
   deleteApplicant= (contact) =>{
-    console.log("Parent delete", contact);
     SimpleAsyncStorage.deleteData(contact.email);
     this.props.navigation.navigate('Home')
 

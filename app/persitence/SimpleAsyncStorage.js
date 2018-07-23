@@ -10,7 +10,7 @@ async  storeData(key, item){
         var jsonOfItem = await AsyncStorage.setItem(key, JSON.stringify(item));
         return jsonOfItem;
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   },
   async  updateData(key, item){
@@ -18,7 +18,8 @@ async  storeData(key, item){
         var jsonOfItem = await AsyncStorage.mergeItem(key, JSON.stringify(item));
         return jsonOfItem;
     } catch (error) {
-      console.log(error.message);
+      throw error;
+
     }
   },
 async retrieveData(key) {
@@ -27,14 +28,14 @@ async retrieveData(key) {
       const item = JSON.parse(retrievedItem);
       return item;
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   },
   async deleteData(key) {
     try {
     await AsyncStorage.removeItem(key);
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   },
   async retrieveAllData() {
@@ -43,7 +44,7 @@ async retrieveData(key) {
       const retrievedItems=  AsyncStorage.multiGet(retrievedKeys);
       return retrievedItems;
     } catch (error) {
-      console.log(error.message);
+      throw error;
     }
   }
 };

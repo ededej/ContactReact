@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScrollView, Switch, View, StyleSheet ,Text} from 'react-native';
 import { FormLabel, FormInput, FormValidationMessage, Button } from 'react-native-elements';
-import SimpleAsyncStorage from '../persitence/SimpleAsyncStorage'
 
 const emailRegExp = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 const nameRegExp = /^[A-Za-z]+$/;
@@ -90,14 +89,10 @@ class ContactForm extends React.Component {
 
 
     buttonDisabled() {
-        console.log("button")
         if (!this.state.firstNameError && !this.state.lastNameError && !this.state.phoneError && !this.state.emailError) {
             this.setState({ buttonDisabled: false });
-            console.log("all true")
 
         } else {
-            console.log("false")
-
             this.setState({ buttonDisabled: true });
 
         }
@@ -202,10 +197,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
     },
-    welcome: {
-        fontSize: 20,
-        padding: 10,
-    },
+
 
     buttonContainer: {
         padding: 30,

@@ -16,10 +16,8 @@ class ContactAddScreen extends Component {
       }
 
       createApplicant = (contact) => {
-        console.log("Parent update", contact);
         SimpleAsyncStorage.storeData(contact.email,contact);
         this.setState(contact);
-        console.log("Parent state value", this.state);
         this.props.navigation.navigate('Home')
       };
       
