@@ -135,7 +135,7 @@ class ContactForm extends React.Component {
     render() {
         return (
             <ScrollView >
-                <FormInput labelStyle={styles.formStyle} >First Name</FormInput>
+                <FormLabel labelStyle={styles.formStyle}>First Name</FormLabel>
                 <FormInput
                     returnKeyType='next'
                     placeholder="Please enter your First Name"
