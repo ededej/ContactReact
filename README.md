@@ -1,14 +1,14 @@
 # Contacts App React Native
 
-Contacts is a simple to use app that will help on your everyday life to manage your contacts. You can add, edit and delete them with just a few cliks. The idea behind is to not complicate thing that are simple. No menu are need to manage this app, just a good work flow.
+Contacts is a simple-to-use app that will help in your everyday life to manage your contacts. You can add, edit and delete them with just a few cliks. The idea  is to not complicate things that are simple. No menus are needed to manage this app, just a good work flow.
 
 ## Setup
 
 ### Prerequisites
 
-The app is not hosted on app store or google store. So, to run it locally you will need to follow this instructions. 
+The app is not hosted on the app store or Google store. So, to run it locally you will need to follow these instructions. 
 1. Go to [React Native Page] (https://facebook.github.io/react-native/docs/getting-started.html)
-2. Choose Building Projects with Native Code ( I choose this option just in case I need to write some iOS or android native)
+2. Choose Building Projects with Native Code (I choose this option just in case I needed to write some iOS or Android native).
 3. Follow those instruction based on your local machine.
 
 #### After finishing with Prerequisites
